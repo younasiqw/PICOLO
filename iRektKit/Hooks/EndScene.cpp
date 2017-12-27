@@ -791,9 +791,7 @@ void DrawRadar()
 
 		ImDrawList* windowDrawList = ImGui::GetWindowDrawList();
 		windowDrawList->AddLine(ImVec2(pos.x + (siz.x / 2), pos.y + 0), ImVec2(pos.x + (siz.x / 2), pos.y + siz.y), Color::Black().GetU32(), 1.5f);
-		windowDrawList->AddLine(ImVec2(pos.x + 0, pos.y + (siz.y / 2)), ImVec2(pos.x + siz.x, pos.y + (siz.y / 2)), 
-			
-			().GetU32(), 1.5f);
+		windowDrawList->AddLine(ImVec2(pos.x + 0, pos.y + (siz.y / 2)), ImVec2(pos.x + siz.x, pos.y + (siz.y / 2)), Color::Black().GetU32(), 1.5f);
 
 		// Rendering players
 
@@ -1544,7 +1542,7 @@ long __stdcall Hooks::EndScene(IDirect3DDevice9* pDevice)
 			if (buttonmenu > 0) {
 				ImGui::SetNextWindowPos(ImVec2((width2 + 185) - pizda, height3 + 45));
 				ImGui::SetNextWindowSize(ImVec2(490.f, 259.f));
-				if (ImGui::Begin("RXCHEAT‡ÔÔfgskjdfsdf", &Vars.Menu.Opened, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar)) {
+				if (ImGui::Begin("RXCHEAT√†√Ø√Øfgskjdfsdf", &Vars.Menu.Opened, ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar)) {
 
 					if (buttonmenu == 17) {
 						{
